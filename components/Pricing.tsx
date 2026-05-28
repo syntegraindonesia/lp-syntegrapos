@@ -61,45 +61,65 @@ export default function Pricing() {
           </p>
         </div>
         <div className="mt-12 grid lg:grid-cols-3 gap-6">
-          {tiers.map((t) => (
-            <div
-              key={t.name}
-              className={`relative rounded-2xl bg-white p-7 border ${
-                t.highlight
-                  ? "border-brand-500 shadow-glow"
-                  : "border-slate-200"
-              }`}
-            >
-              {t.highlight && (
-                <span className="absolute -top-3 left-7 inline-flex items-center rounded-full bg-brand-600 text-white text-[11px] font-medium px-3 py-1">
-                  Paling populer
-                </span>
-              )}
-              <h3 className="font-display text-lg font-semibold">{t.name}</h3>
-              <p className="mt-1 text-sm text-slate-500">{t.desc}</p>
-              <div className="mt-5 flex items-baseline gap-1">
-                <span className="font-display text-3xl font-bold">{t.price}</span>
-                <span className="text-sm text-slate-500">{t.period}</span>
-              </div>
-              <ul className="mt-6 space-y-2 text-sm text-slate-700">
-                {t.features.map((f) => (
-                  <li key={f} className="flex gap-2">
-                    <span className="text-brand-600">✓</span> {f}
-                  </li>
-                ))}
-              </ul>
-              <a
-                href="#cta"
-                className={`mt-7 inline-flex w-full justify-center rounded-lg px-4 py-2.5 text-sm font-medium ${
-                  t.highlight
-                    ? "bg-brand-600 hover:bg-brand-700 text-white"
-                    : "border border-slate-200 hover:border-brand-300 text-slate-800"
+          {tiers.map((t) => {
+            const isHi = t.highlight;
+            return (
+              <div
+                key={t.name}
+                className={`relative rounded-2xl p-7 border transition ${
+                  isHi
+                    ? "bg-brand-grad text-white border-transparent shadow-glow"
+                    : "bg-brand-50 text-ink-900 border-brand-100 hover:border-brand-300"
                 }`}
               >
-                {t.cta}
-              </a>
-            </div>
-          ))}
+                {isHi && (
+                  <span className="absolute -top-3 left-7 inline-flex items-center rounded-full bg-white text-brand-700 text-[11px] font-semibold px-3 py-1 shadow">
+                    Paling populer
+                  </span>
+                )}
+                <h3 className="font-display text-lg font-semibold">{t.name}</h3>
+                <p
+                  className={`mt-1 text-sm ${
+                    isHi ? "text-white/80" : "text-slate-600"
+                  }`}
+                >
+                  {t.desc}
+                </p>
+                <div className="mt-5 flex items-baseline gap-1">
+                  <span className="font-display text-3xl font-bold">{t.price}</span>
+                  <span
+                    className={`text-sm ${
+                      isHi ? "text-white/80" : "text-slate-500"
+                    }`}
+                  >
+                    {t.period}
+                  </span>
+                </div>
+                <ul
+                  className={`mt-6 space-y-2 text-sm ${
+                    isHi ? "text-white/95" : "text-slate-700"
+                  }`}
+                >
+                  {t.features.map((f) => (
+                    <li key={f} className="flex gap-2">
+                      <span className={isHi ? "text-white" : "text-brand-600"}>✓</span>{" "}
+                      {f}
+                    </li>
+                  ))}
+                </ul>
+                <a
+                  href="#cta"
+                  className={`mt-7 inline-flex w-full justify-center rounded-lg px-4 py-2.5 text-sm font-semibold ${
+                    isHi
+                      ? "bg-white text-brand-700 hover:bg-brand-50"
+                      : "bg-brand-600 hover:bg-brand-700 text-white"
+                  }`}
+                >
+                  {t.cta}
+                </a>
+              </div>
+            );
+          })}
         </div>
       </div>
     </section>
