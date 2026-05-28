@@ -3,14 +3,13 @@ export default function Footer() {
     <footer className="border-t border-slate-200 bg-white">
       <div className="mx-auto max-w-7xl px-6 py-14 grid md:grid-cols-4 gap-10">
         <div>
-          <div className="flex items-center gap-2">
-            <div className="h-8 w-8 rounded-lg bg-gradient-to-br from-brand-500 to-brand-700 grid place-items-center text-white font-display font-bold">
-              S
-            </div>
-            <span className="font-display font-bold tracking-tight">
-              SYNTEGRA<span className="text-brand-600"> POS</span>
-            </span>
-          </div>
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src="/logo-syntegra-pos.png"
+            alt="Syntegra POS"
+            className="h-9 w-auto"
+          />
+
           <p className="mt-4 text-sm text-slate-500 max-w-xs">
             Sistem kasir modern untuk retail &amp; F&amp;B. Bagian dari ekosistem
             Syntegra.

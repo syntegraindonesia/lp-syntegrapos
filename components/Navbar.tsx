@@ -2,13 +2,13 @@ export default function Navbar() {
   return (
     <header className="sticky top-0 z-40 backdrop-blur bg-white/75 border-b border-slate-200/60">
       <div className="mx-auto max-w-7xl px-6 h-16 flex items-center justify-between">
-        <a href="#" className="flex items-center gap-2">
-          <div className="h-8 w-8 rounded-lg bg-gradient-to-br from-brand-500 to-brand-700 grid place-items-center text-white font-display font-bold">
-            S
-          </div>
-          <span className="font-display font-bold tracking-tight text-lg">
-            SYNTEGRA<span className="text-brand-600"> POS</span>
-          </span>
+        <a href="#" className="flex items-center">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src="/logo-syntegra-pos.png"
+            alt="Syntegra POS"
+            className="h-8 w-auto"
+          />
         </a>
         <nav className="hidden md:flex items-center gap-8 text-sm text-slate-600">
           <a href="#fitur" className="hover:text-brand-700">Fitur</a>

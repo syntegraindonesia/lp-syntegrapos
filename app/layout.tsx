@@ -5,13 +5,30 @@ export const metadata: Metadata = {
   title: "SYNTEGRA POS — Sistem Kasir Modern untuk Retail & F&B",
   description:
     "Aplikasi POS berbasis web (PWA) untuk retail, restoran, dan cafe. Multi-cabang, multi-gudang, offline-ready, terintegrasi akuntansi & marketplace.",
-  themeColor: "#0d9488",
+  themeColor: "#2563eb",
+  manifest: "/manifest.webmanifest",
+  icons: {
+    icon: "/favicon.png",
+    apple: "/apple-touch-icon.png",
+  },
+  appleWebApp: {
+    capable: true,
+    title: "Syntegra POS",
+    statusBarStyle: "black-translucent",
+  },
+};
+
+export const viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 1,
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="id">
       <head>
+        <meta name="mobile-web-app-capable" content="yes" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
         <link

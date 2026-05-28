@@ -13,7 +13,7 @@ html, body {
 }
 
 .bg-dots {
-  background-image: radial-gradient(rgba(13,148,136,0.18) 1px, transparent 1px);
+  background-image: radial-gradient(rgba(37,99,235,0.18) 1px, transparent 1px);
   background-size: 22px 22px;
 }
 
@@ -26,7 +26,7 @@ html, body {
   inset: 0;
   border-radius: inherit;
   padding: 1px;
-  background: linear-gradient(135deg, rgba(13,148,136,0.6), rgba(45,212,191,0.0) 40%, rgba(13,148,136,0.4));
+  background: linear-gradient(135deg, rgba(37,99,235,0.6), rgba(56,189,248,0.0) 40%, rgba(37,99,235,0.4));
   -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
   -webkit-mask-composite: xor;
           mask-composite: exclude;
