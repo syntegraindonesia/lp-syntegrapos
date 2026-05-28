@@ -30,8 +30,8 @@ const config: Config = {
         },
       },
       fontFamily: {
-        display: ['"Space Grotesk"', "system-ui", "sans-serif"],
-        sans: ['"DM Sans"', "system-ui", "sans-serif"],
+        display: ['"Montserrat"', "system-ui", "sans-serif"],
+        sans: ['"Lato"', "system-ui", "sans-serif"],
         mono: ['"JetBrains Mono"', "ui-monospace", "monospace"],
       },
       boxShadow: {
