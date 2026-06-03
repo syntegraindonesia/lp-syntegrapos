@@ -5,11 +5,72 @@
 :root {
   color-scheme: light;
 }
+html.dark {
+  color-scheme: dark;
+}
 
 html, body {
   background: #ffffff;
   color: #0b1220;
   font-feature-settings: "ss01", "cv11";
+  transition: background-color 0.25s ease, color 0.25s ease;
+}
+html.dark, html.dark body {
+  background-color: #050d24 !important;
+  background-image:
+    radial-gradient(ellipse at 85% 20%, rgba(34, 211, 238, 0.18), transparent 55%),
+    radial-gradient(ellipse at 15% 80%, rgba(37, 99, 235, 0.12), transparent 60%),
+    linear-gradient(135deg, #050d24 0%, #0c1b4d 50%, #134e4a 100%) !important;
+  background-attachment: fixed !important;
+  color: #e2e8f0;
+}
+
+/* ============== DARK MODE COHESION OVERRIDES ============== */
+/* Force section headings visible (Tailwind specificity quirk insurance) */
+html.dark h1.text-ink-900,
+html.dark h2.text-ink-900,
+html.dark h3.text-ink-900 {
+  color: #f1f5f9;
+}
+
+
+
+
+/* Tone down bright bg gradient sections to align with dark mood */
+html.dark #harga,
+html.dark #faq {
+  background: linear-gradient(180deg, #050d24 0%, #091538 100%) !important;
+}
+
+/* Pricing card top ribbon — muted in dark */
+html.dark #harga .price-ribbon {
+  background: linear-gradient(90deg, #1e40af 0%, #0e7490 100%) !important;
+}
+
+/* Pricing right panel — fully integrate with dark card */
+html.dark #harga .price-feat-panel {
+  background: rgba(255, 255, 255, 0.02) !important;
+}
+
+/* Pricing CTA button — tone down brightness in dark */
+html.dark #harga .price-cta {
+  background: linear-gradient(110deg, #1e40af 0%, #2563eb 60%, #0891b2 100%) !important;
+  box-shadow: 0 12px 30px -14px rgba(37, 99, 235, 0.45) !important;
+}
+
+/* CTA section — slightly muted gradient */
+html.dark #cta > div {
+  background: radial-gradient(ellipse at 90% 0%, rgba(34, 211, 238, 0.18), transparent 55%),
+              linear-gradient(135deg, #050d24 0%, #091538 50%, #0c1b4d 100%) !important;
+}
+
+/* Hero CTA "Coba Gratis 14 Hari" — subtle accent gradient in dark */
+html.dark .hero-cta-white {
+  background: linear-gradient(110deg, #0891b2 0%, #1e40af 100%) !important;
+  color: #ffffff !important;
+}
+html.dark .hero-cta-white:hover {
+  background: linear-gradient(110deg, #0e7490 0%, #1d4ed8 100%) !important;
 }
 
 .bg-dots {

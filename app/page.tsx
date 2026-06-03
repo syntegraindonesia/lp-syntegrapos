@@ -12,7 +12,7 @@ import Footer from "@/components/Footer";
 
 export default function Page() {
   return (
-    <main className="min-h-screen bg-white text-ink-900">
+    <main className="min-h-screen bg-white dark:bg-transparent text-ink-900 dark:text-slate-200">
       <Navbar />
       <Hero />
       <LogosStrip />

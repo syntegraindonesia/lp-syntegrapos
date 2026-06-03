@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import Providers from "@/components/Providers";
 
 export const metadata: Metadata = {
   title: "Syntegra POS — Sistem Kasir Modern untuk Retail & F&B",
@@ -36,7 +37,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           rel="stylesheet"
         />
       </head>
-      <body className="font-sans antialiased">{children}</body>
+      <body className="font-sans antialiased bg-white text-ink-900 dark:bg-navy-950 dark:text-slate-200">
+        <Providers>{children}</Providers>
+      </body>
     </html>
   );
 }
