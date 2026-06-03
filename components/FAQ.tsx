@@ -8,7 +8,7 @@ const qaData = {
     { q: "Apakah data aman saat offline?", a: "Aman. Data lokal di-enkripsi dan hanya bisa diakses oleh akun kasir yang login. Audit log mencatat setiap pergerakan." },
     { q: "Apakah saya perlu menginstal aplikasi?", a: "Tidak wajib. Syntegra POS adalah PWA — bisa langsung dipakai di browser, atau ditambahkan ke home screen agar berperilaku seperti aplikasi native." },
     { q: "Apakah bisa kelola stok multi-gudang?", a: "Bisa. Tiap cabang dan gudang punya saldo stok sendiri, dengan transfer stok dan audit trail antar lokasi." },
-    { q: "Apakah ada masa percobaan gratis?", a: "Ya, 14 hari penuh fitur dengan kartu kredit. Anda bisa berhenti kapan saja sebelum trial berakhir tanpa dipotong biaya." },
+    { q: "Apakah ada masa percobaan gratis?", a: "Ya, 30 hari penuh fitur dengan kartu kredit. Anda bisa berhenti kapan saja sebelum trial berakhir tanpa dipotong biaya." },
     { q: "Bagaimana mengatur hak akses tiap staf?", a: "Lewat role-based access. Anda bisa membuat role custom, mengatur izin per modul, dan menyalakan approval workflow untuk transaksi bernilai besar." },
   ],
   en: [
@@ -16,7 +16,7 @@ const qaData = {
     { q: "Is the data safe when offline?", a: "Safe. Local data is encrypted and only accessible to the signed-in cashier. The audit log records every change." },
     { q: "Do I need to install an app?", a: "Not required. Syntegra POS is a PWA — usable directly in the browser, or installable to the home screen to behave like a native app." },
     { q: "Can I manage multi-warehouse stock?", a: "Yes. Each branch and warehouse has its own stock balance, with transfers and audit trails between locations." },
-    { q: "Is there a free trial?", a: "Yes, 14 full-feature days with a credit card. Cancel anytime before the trial ends and you won't be charged." },
+    { q: "Is there a free trial?", a: "Yes, 30 full-feature days with a credit card. Cancel anytime before the trial ends and you won't be charged." },
     { q: "How do I configure staff permissions?", a: "Via role-based access. Create custom roles, set per-module permissions, and enable approval workflows for high-value transactions." },
   ],
 };

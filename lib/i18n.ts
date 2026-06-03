@@ -13,7 +13,7 @@ export const messages = {
     nav_testimoni: "Testimoni",
     nav_faq: "FAQ",
     nav_login: "Login",
-    nav_cta: "Coba Gratis 14 Hari",
+    nav_cta: "Coba Gratis 30 Hari",
 
     // Hero
     hero_badge: "Sistem Kasir Modern untuk Bisnis Modern",
@@ -21,7 +21,7 @@ export const messages = {
     hero_h1_rest: "Kasir Pintar yang Urus Semuanya untuk Anda",
     hero_sub:
       "Operasional lancar 24/7, tanpa drama, tanpa downtime. Fokus pada pelanggan, biarkan Syntegra POS mengurus transaksi, stok, dan laporan.",
-    hero_cta_primary: "Coba Gratis 14 Hari",
+    hero_cta_primary: "Coba Gratis 30 Hari",
     hero_cta_secondary: "Lihat Demo",
     hero_f1: "Multi-Cabang",
     hero_f2: "Offline Ready",
@@ -59,7 +59,7 @@ export const messages = {
     price_h2_a: "Satu paket.",
     price_h2_b: "Semua yang Anda butuhkan.",
     price_sub:
-      "Trial 14 hari dengan kartu kredit. Batalkan kapan saja sebelum trial berakhir, tanpa dipotong biaya.",
+      "Trial 30 hari dengan kartu kredit. Batalkan kapan saja sebelum trial berakhir, tanpa dipotong biaya.",
     price_ribbon: "🎉 PROMO HEMAT HAMPIR 50% · BERLAKU TERBATAS",
     price_per: "/bulan",
     price_note: "harga promo periode terbatas",
@@ -69,7 +69,7 @@ export const messages = {
     price_unit_user: "/user",
     price_unit_branch: "/cabang",
     price_cta: "Mulai Sekarang",
-    price_trust_1: "Trial 14 hari",
+    price_trust_1: "Trial 30 hari",
     price_trust_2: "Tanpa setup fee",
     price_trust_3: "Batal kapan saja",
     price_features_h: "Yang Anda dapatkan",
@@ -85,7 +85,7 @@ export const messages = {
     // CTA
     cta_h2: "Siap mempercepat bisnis Anda?",
     cta_sub:
-      "Coba Syntegra POS gratis selama 14 hari dengan kartu kredit. Tidak perlu install server, batalkan kapan saja.",
+      "Coba Syntegra POS gratis selama 30 hari dengan kartu kredit. Tidak perlu install server, batalkan kapan saja.",
     cta_placeholder: "email@bisnis.com",
     cta_btn: "Mulai Trial",
 
@@ -104,14 +104,14 @@ export const messages = {
     nav_testimoni: "Testimonials",
     nav_faq: "FAQ",
     nav_login: "Login",
-    nav_cta: "Start 14-Day Free Trial",
+    nav_cta: "Start 30-Day Free Trial",
 
     hero_badge: "Modern POS for Modern Businesses",
     hero_h1_brand: "Syntegra POS",
     hero_h1_rest: "The Smart Cashier That Handles Everything for You",
     hero_sub:
       "24/7 smooth operations, no drama, no downtime. Focus on customers — let Syntegra POS handle transactions, stock, and reports.",
-    hero_cta_primary: "Start 14-Day Free Trial",
+    hero_cta_primary: "Start 30-Day Free Trial",
     hero_cta_secondary: "Watch Demo",
     hero_f1: "Multi-Branch",
     hero_f2: "Offline Ready",
@@ -144,7 +144,7 @@ export const messages = {
     price_h2_a: "One plan.",
     price_h2_b: "Everything you need.",
     price_sub:
-      "14-day trial with credit card. Cancel anytime before the trial ends — you won't be charged.",
+      "30-day trial with credit card. Cancel anytime before the trial ends — you won't be charged.",
     price_ribbon: "🎉 ALMOST 50% OFF · LIMITED TIME",
     price_per: "/month",
     price_note: "limited-time promo price",
@@ -154,7 +154,7 @@ export const messages = {
     price_unit_user: "/user",
     price_unit_branch: "/branch",
     price_cta: "Get Started",
-    price_trust_1: "14-day trial",
+    price_trust_1: "30-day trial",
     price_trust_2: "No setup fee",
     price_trust_3: "Cancel anytime",
     price_features_h: "What you get",
@@ -168,7 +168,7 @@ export const messages = {
 
     cta_h2: "Ready to grow faster?",
     cta_sub:
-      "Try Syntegra POS free for 14 days with a credit card. No server install, cancel anytime.",
+      "Try Syntegra POS free for 30 days with a credit card. No server install, cancel anytime.",
     cta_placeholder: "email@yourbusiness.com",
     cta_btn: "Start Trial",
 
