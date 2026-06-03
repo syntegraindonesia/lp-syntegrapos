@@ -59,7 +59,7 @@ export default function Navbar() {
           ))}
         </nav>
 
-        <div className="flex items-center gap-3">
+        <div className="flex items-center gap-1.5 sm:gap-3">
           <LangToggle light={!scrolled} />
           <ThemeToggle light={!scrolled} />
           <a
@@ -72,7 +72,7 @@ export default function Navbar() {
           </a>
           <a
             href="#harga"
-            className={`inline-flex items-center rounded-xl text-sm font-semibold px-5 py-2.5 transition ${
+            className={`inline-flex items-center rounded-lg sm:rounded-xl text-[11px] sm:text-sm font-semibold px-2.5 sm:px-5 py-1.5 sm:py-2.5 transition ${
               scrolled
                 ? "bg-brand-grad text-white shadow-[0_8px_20px_-8px_rgba(37,99,235,0.5)]"
                 : "hero-cta-white bg-white text-brand-700 shadow-[0_10px_24px_-10px_rgba(0,0,0,0.35)] hover:-translate-y-0.5"

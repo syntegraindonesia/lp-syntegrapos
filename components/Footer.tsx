@@ -6,8 +6,8 @@ export default function Footer() {
   const t = useT();
   return (
     <footer className="border-t border-slate-200 dark:border-white/10 py-10 bg-white dark:bg-navy-950">
-      <div className="max-w-6xl mx-auto px-6 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 text-sm">
-        <div className="flex items-center gap-3 font-semibold">
+      <div className="max-w-6xl mx-auto px-6 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 sm:gap-4 text-sm">
+        <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-3 font-semibold">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src="/logo-syntegra-pos.png"
