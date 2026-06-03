@@ -39,10 +39,12 @@ export default function HowItWorks() {
             key={s.n}
             className="rounded-xl border border-slate-200 p-6 bg-white relative overflow-hidden"
           >
-            <div className="font-mono text-xs text-brand-600">{s.n}</div>
-            <h3 className="mt-2 font-display font-semibold text-lg">{s.title}</h3>
-            <p className="mt-2 text-sm text-slate-600">{s.desc}</p>
-            <div className="absolute -right-6 -bottom-6 h-24 w-24 rounded-full bg-brand-50" />
+            <div className="absolute -right-8 -bottom-8 h-24 w-24 rounded-full bg-gradient-to-br from-accent-100 to-brand-50 opacity-60 z-0" />
+            <div className="relative z-10">
+              <div className="font-mono text-xs text-accent-600">{s.n}</div>
+              <h3 className="mt-2 font-display font-semibold text-lg">{s.title}</h3>
+              <p className="mt-2 text-sm text-slate-600">{s.desc}</p>
+            </div>
           </li>
         ))}
       </ol>

@@ -9,7 +9,7 @@ const qa = [
   },
   {
     q: "Apakah saya perlu menginstal aplikasi?",
-    a: "Tidak wajib. SYNTEGRA POS adalah PWA — bisa langsung dipakai di browser, atau ditambahkan ke home screen agar berperilaku seperti aplikasi native.",
+    a: "Tidak wajib. Syntegra POS adalah PWA — bisa langsung dipakai di browser, atau ditambahkan ke home screen agar berperilaku seperti aplikasi native.",
   },
   {
     q: "Apakah bisa kelola stok multi-gudang?",
@@ -17,7 +17,7 @@ const qa = [
   },
   {
     q: "Apakah ada masa percobaan gratis?",
-    a: "Ya, 30 hari penuh fitur tanpa kartu kredit. Anda bisa berhenti kapan saja.",
+    a: "Ya, 14 hari penuh fitur dengan kartu kredit. Anda bisa berhenti kapan saja sebelum trial berakhir tanpa dipotong biaya.",
   },
   {
     q: "Bagaimana mengatur hak akses tiap staf?",
@@ -27,7 +27,14 @@ const qa = [
 
 export default function FAQ() {
   return (
-    <section id="faq" className="bg-slate-50/60 border-y border-slate-100">
+    <section
+      id="faq"
+      className="relative border-y border-slate-100"
+      style={{
+        background:
+          "radial-gradient(ellipse at 100% 50%, rgba(103,232,249,0.08), transparent 55%), linear-gradient(180deg,#ffffff 0%,#f0f9ff 100%)",
+      }}
+    >
       <div className="mx-auto max-w-4xl px-6 py-24">
         <div className="max-w-2xl">
           <h2 className="font-display text-3xl sm:text-4xl font-bold tracking-tight">
@@ -41,7 +48,7 @@ export default function FAQ() {
                 <span className="font-display font-medium text-ink-900">
                   {item.q}
                 </span>
-                <span className="text-brand-600 group-open:rotate-45 transition">
+                <span className="text-accent-500 group-open:rotate-45 transition">
                   +
                 </span>
               </summary>

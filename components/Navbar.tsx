@@ -66,7 +66,7 @@ export default function Navbar() {
                 : "bg-white text-brand-700 shadow-[0_10px_24px_-10px_rgba(0,0,0,0.35)] hover:-translate-y-0.5"
             }`}
           >
-            Coba Gratis 30 Hari
+            Coba Gratis 14 Hari
           </a>
         </div>
       </div>

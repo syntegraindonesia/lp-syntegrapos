@@ -27,7 +27,7 @@ export default function Testimonials() {
           Apa Kata Pemilik Bisnis
         </h2>
         <p className="mt-4 text-slate-600">
-          Cerita nyata dari pengguna SYNTEGRA POS di berbagai jenis usaha.
+          Cerita nyata dari pengguna Syntegra POS di berbagai jenis usaha.
         </p>
       </div>
       <div className="mt-12 grid md:grid-cols-3 gap-6">

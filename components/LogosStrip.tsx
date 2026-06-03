@@ -3,7 +3,7 @@ export default function LogosStrip() {
     "GoFood", "ShopeeFood", "GrabFood", "TikTok Shop", "Tokopedia", "Shopee",
   ];
   return (
-    <section className="border-y border-slate-100 bg-slate-50/50">
+    <section className="border-y border-slate-100 bg-gradient-to-b from-white to-accent-50/40">
       <div className="mx-auto max-w-7xl px-6 py-8">
         <p className="text-center text-xs uppercase tracking-widest text-slate-400 mb-5">
           Terintegrasi dengan platform yang Anda pakai

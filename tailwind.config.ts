@@ -19,9 +19,19 @@ const config: Config = {
           950: "#172554",
         },
         accent: {
-          400: "#38bdf8",
-          500: "#0ea5e9",
-          600: "#0284c7",
+          50: "#ecfeff",
+          100: "#cffafe",
+          200: "#a5f3fc",
+          300: "#67e8f9",
+          400: "#22d3ee",
+          500: "#06b6d4",
+          600: "#0891b2",
+          700: "#0e7490",
+        },
+        navy: {
+          800: "#0c1b4d",
+          900: "#091538",
+          950: "#050d24",
         },
         ink: {
           900: "#0b1220",
@@ -30,7 +40,7 @@ const config: Config = {
         },
       },
       fontFamily: {
-        display: ['"Montserrat"', "system-ui", "sans-serif"],
+        display: ['"Plus Jakarta Sans"', "system-ui", "sans-serif"],
         sans: ['"Lato"', "system-ui", "sans-serif"],
         mono: ['"JetBrains Mono"', "ui-monospace", "monospace"],
       },
@@ -41,7 +51,9 @@ const config: Config = {
         "grid-fade":
           "radial-gradient(circle at 30% 20%, rgba(37,99,235,0.18), transparent 60%), radial-gradient(circle at 80% 0%, rgba(56,189,248,0.18), transparent 55%)",
         "brand-grad":
-          "linear-gradient(135deg, #1e3a8a 0%, #2563eb 45%, #38bdf8 100%)",
+          "linear-gradient(135deg, #091538 0%, #1e3a8a 30%, #2563eb 65%, #22d3ee 100%)",
+        "hero-mood":
+          "radial-gradient(ellipse at 80% 20%, rgba(34,211,238,0.18), transparent 55%), linear-gradient(180deg, #ffffff 0%, #f0f9ff 100%)",
       },
     },
   },

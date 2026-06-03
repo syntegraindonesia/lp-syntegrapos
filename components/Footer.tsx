@@ -1,76 +1,22 @@
 export default function Footer() {
   return (
-    <footer className="border-t border-slate-200 bg-white">
-      <div className="mx-auto max-w-7xl px-6 py-14 grid md:grid-cols-4 gap-10">
-        <div>
+    <footer className="border-t border-slate-200 py-10 bg-white">
+      <div className="max-w-6xl mx-auto px-6 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 text-sm">
+        <div className="flex items-center gap-3 font-semibold">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src="/logo-syntegra-pos.png"
             alt="Syntegra POS"
-            className="h-9 w-auto"
+            className="h-[30px] w-auto block"
           />
-
-          <p className="mt-4 text-sm text-slate-500 max-w-xs">
-            Sistem kasir modern untuk retail &amp; F&amp;B. Bagian dari ekosistem
-            Syntegra.
-          </p>
+          <span className="text-slate-400 font-normal">
+            · Bagian dari ekosistem Syntegra.
+          </span>
         </div>
-        <FooterCol
-          title="Produk"
-          links={[
-            ["Fitur", "#fitur"],
-            ["Harga", "#harga"],
-            ["Cara Kerja", "#cara-kerja"],
-            ["FAQ", "#faq"],
-          ]}
-        />
-        <FooterCol
-          title="Perusahaan"
-          links={[
-            ["Tentang Syntegra", "https://syntegra.co.id"],
-            ["Blog", "#"],
-            ["Karir", "#"],
-            ["Kontak", "#"],
-          ]}
-        />
-        <FooterCol
-          title="Legal"
-          links={[
-            ["Kebijakan Privasi", "#"],
-            ["Syarat & Ketentuan", "#"],
-            ["SLA", "#"],
-          ]}
-        />
-      </div>
-      <div className="border-t border-slate-100">
-        <div className="mx-auto max-w-7xl px-6 py-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-slate-500">
-          <span>© {new Date().getFullYear()} PT Syntegra. All rights reserved.</span>
-          <span className="font-mono">v1.0 · pos.syntegra.co.id</span>
-        </div>
+        <p className="text-slate-500">
+          © {new Date().getFullYear()} Syntegra. Semua hak dilindungi.
+        </p>
       </div>
     </footer>
-  );
-}
-
-function FooterCol({
-  title,
-  links,
-}: {
-  title: string;
-  links: [string, string][];
-}) {
-  return (
-    <div>
-      <h4 className="font-display font-semibold text-sm">{title}</h4>
-      <ul className="mt-4 space-y-2 text-sm text-slate-600">
-        {links.map(([label, href]) => (
-          <li key={label}>
-            <a className="hover:text-brand-700" href={href}>
-              {label}
-            </a>
-          </li>
-        ))}
-      </ul>
-    </div>
   );
 }

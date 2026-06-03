@@ -1,7 +1,13 @@
 export default function CTASection() {
   return (
     <section id="cta" className="mx-auto max-w-7xl px-6 py-24">
-      <div className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-brand-700 via-brand-600 to-brand-500 text-white p-10 lg:p-14">
+      <div
+        className="relative overflow-hidden rounded-3xl text-white p-10 lg:p-14"
+        style={{
+          background:
+            "radial-gradient(ellipse at 90% 0%, rgba(34,211,238,0.45), transparent 50%), linear-gradient(135deg,#091538 0%,#1e40af 45%,#2563eb 100%)",
+        }}
+      >
         <div className="absolute -right-20 -top-20 h-72 w-72 rounded-full bg-white/10 blur-2xl" />
         <div className="relative grid lg:grid-cols-2 gap-8 items-center">
           <div>
@@ -9,8 +15,8 @@ export default function CTASection() {
               Siap mempercepat bisnis Anda?
             </h2>
             <p className="mt-3 text-white/85 max-w-lg">
-              Coba SYNTEGRA POS gratis selama 30 hari. Tidak perlu kartu kredit,
-              tidak perlu install server.
+              Coba Syntegra POS gratis selama 14 hari dengan kartu kredit.
+              Tidak perlu install server, batalkan kapan saja.
             </p>
           </div>
           <form className="flex flex-col sm:flex-row gap-3 lg:justify-end">

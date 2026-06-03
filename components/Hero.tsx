@@ -14,7 +14,7 @@ export default function Hero() {
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
           src="/hero-kasir.png"
-          alt="Kasir menggunakan SYNTEGRA POS"
+          alt="Kasir menggunakan Syntegra POS"
           className="w-full h-full object-cover object-right"
         />
         {/* Light left-side gradient (image already has its own blue gradient) */}
@@ -35,14 +35,22 @@ export default function Hero() {
           </span>
 
           <h1 className="mt-7 font-display font-extrabold tracking-tight text-white leading-[1.08] text-4xl sm:text-5xl lg:text-[3.4rem]">
-            SYNTEGRA POS,
+            <span
+              className="bg-clip-text text-transparent"
+              style={{
+                backgroundImage:
+                  "linear-gradient(110deg,#5eead4 0%,#67e8f9 35%,#38bdf8 70%,#7dd3fc 100%)",
+              }}
+            >
+              Syntegra POS
+            </span>
             <br />
             Kasir Pintar yang Urus Semuanya untuk Anda
           </h1>
 
           <p className="mt-6 text-lg text-white/85 max-w-lg leading-relaxed">
             Operasional lancar 24/7, tanpa drama, tanpa downtime. Fokus pada
-            pelanggan, biarkan SYNTEGRA POS mengurus transaksi, stok, dan
+            pelanggan, biarkan Syntegra POS mengurus transaksi, stok, dan
             laporan.
           </p>
 
@@ -51,7 +59,7 @@ export default function Hero() {
               href="#harga"
               className="inline-flex items-center gap-2 rounded-xl bg-white text-brand-700 font-semibold px-6 py-3 shadow-[0_10px_24px_-10px_rgba(0,0,0,0.35)] hover:-translate-y-0.5 transition"
             >
-              Coba Gratis 30 Hari
+              Coba Gratis 14 Hari
             </a>
             <a
               href="#cara-kerja"

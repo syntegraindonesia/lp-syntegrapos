@@ -48,7 +48,10 @@ const features = [
 
 export default function Features() {
   return (
-    <section id="fitur" className="mx-auto max-w-7xl px-6 py-24">
+    <section
+      id="fitur"
+      className="relative mx-auto max-w-7xl px-6 py-24"
+    >
       <div className="max-w-2xl">
         <h2 className="font-display text-3xl sm:text-4xl font-bold tracking-tight">
           Semua yang dibutuhkan untuk menjalankan bisnis Anda
@@ -62,9 +65,9 @@ export default function Features() {
         {features.map((f) => (
           <div
             key={f.title}
-            className="group rounded-xl border border-slate-200 hover:border-brand-300 bg-white p-6 transition shadow-sm hover:shadow-md"
+            className="group rounded-xl border border-slate-200 hover:border-accent-400 bg-white p-6 transition shadow-sm hover:shadow-[0_12px_40px_-12px_rgba(34,211,238,0.35)]"
           >
-            <div className="h-10 w-10 rounded-lg bg-brand-50 text-brand-700 grid place-items-center text-xl">
+            <div className="h-10 w-10 rounded-lg bg-gradient-to-br from-accent-100 to-brand-100 text-brand-700 grid place-items-center text-xl">
               {f.icon}
             </div>
             <h3 className="mt-4 font-display font-semibold text-lg">{f.title}</h3>
