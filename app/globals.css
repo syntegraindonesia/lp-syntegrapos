@@ -83,6 +83,28 @@ html.dark .hero-cta-white:hover {
   50%      { transform: translateY(-10px); }
 }
 
+@keyframes marquee-left {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+@keyframes marquee-right {
+  0%   { transform: translateX(-50%); }
+  100% { transform: translateX(0); }
+}
+.marquee-track {
+  display: flex;
+  width: max-content;
+  gap: 3rem;
+  animation: marquee-left 28s linear infinite;
+}
+.marquee-track.reverse {
+  animation: marquee-right 28s linear infinite;
+}
+.marquee-mask {
+  -webkit-mask-image: linear-gradient(to right, transparent, black 8%, black 92%, transparent);
+          mask-image: linear-gradient(to right, transparent, black 8%, black 92%, transparent);
+}
+
 .shine-border {
   position: relative;
 }
