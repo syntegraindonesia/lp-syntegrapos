@@ -12,7 +12,10 @@ export default function Footer() {
           <img
             src="/logo-syntegra-pos.png"
             alt="Syntegra POS"
-            className="h-5 md:h-[30px] w-auto block dark:brightness-0 dark:invert"
+            width={4084}
+            height={1215}
+            className="h-5 md:h-[30px] w-auto max-w-none block dark:brightness-0 dark:invert"
+            style={{ aspectRatio: "4084 / 1215" }}
           />
           <span className="text-slate-400 dark:text-slate-500 font-normal">
             {t("footer_tag")}

@@ -37,9 +37,12 @@ export default function Navbar() {
           <img
             src="/logo-syntegra-pos.png"
             alt="Syntegra POS"
-            className={`h-7 sm:h-9 w-auto transition ${
+            width={4084}
+            height={1215}
+            className={`h-7 sm:h-9 w-auto max-w-none transition ${
               scrolled ? "dark:brightness-0 dark:invert" : "brightness-0 invert"
             }`}
+            style={{ aspectRatio: "4084 / 1215" }}
           />
         </a>
 
