@@ -17,6 +17,11 @@ html, body {
   background-size: 22px 22px;
 }
 
+@keyframes floatY {
+  0%, 100% { transform: translateY(0); }
+  50%      { transform: translateY(-10px); }
+}
+
 .shine-border {
   position: relative;
 }

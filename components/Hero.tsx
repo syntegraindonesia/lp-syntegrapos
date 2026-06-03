@@ -1,71 +1,90 @@
 export default function Hero() {
   return (
-    <section className="relative overflow-hidden">
-      <div className="absolute inset-0 bg-grid-fade pointer-events-none" />
-      <div className="absolute inset-x-0 top-0 h-[520px] bg-dots opacity-40 [mask-image:linear-gradient(to_bottom,black,transparent)]" />
-      <div className="relative mx-auto max-w-7xl px-6 pt-16 pb-24 lg:pt-24 lg:pb-32 grid lg:grid-cols-12 gap-12 items-center">
-        <div className="lg:col-span-7">
-          <span className="inline-flex items-center gap-2 rounded-full bg-brand-50 border border-brand-100 px-3 py-1 text-xs font-medium text-brand-700">
-            <span className="h-1.5 w-1.5 rounded-full bg-brand-500 animate-pulse" />
-            PWA · Offline-ready · Multi-cabang
+    <section
+      id="beranda"
+      className="relative overflow-hidden text-white"
+      style={{
+        background:
+          "linear-gradient(135deg,#1e3a8a 0%,#1d4ed8 50%,#2563eb 100%)",
+        minHeight: "100vh",
+      }}
+    >
+      {/* Background image (kasir scene) */}
+      <div className="absolute inset-0 z-0">
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src="/hero-kasir.png"
+          alt="Kasir menggunakan SYNTEGRA POS"
+          className="w-full h-full object-cover object-right"
+        />
+        {/* Light left-side gradient (image already has its own blue gradient) */}
+        <div
+          className="absolute inset-0"
+          style={{
+            background:
+              "linear-gradient(to right,rgba(15,54,143,0.55) 0%,rgba(27,70,199,0.25) 35%,rgba(27,70,199,0) 60%)",
+          }}
+        />
+      </div>
+
+      <div className="relative z-10 container mx-auto max-w-6xl px-6 pt-32 pb-20 flex items-center min-h-screen">
+        <div className="max-w-xl">
+          <span className="inline-flex items-center gap-2 rounded-full border border-white/30 bg-white/10 px-4 py-2 text-sm font-semibold backdrop-blur">
+            <span className="h-1.5 w-1.5 rounded-full bg-white animate-pulse" />
+            Sistem Kasir Modern untuk Bisnis Modern
           </span>
-          <h1 className="mt-5 font-display font-bold tracking-tight text-4xl sm:text-5xl lg:text-6xl leading-[1.05]">
-            Sistem Kasir Modern untuk{" "}
-            <span className="bg-brand-grad bg-clip-text text-transparent">
-              Retail, F&amp;B &amp; Hiburan
-            </span>
+
+          <h1 className="mt-7 font-display font-extrabold tracking-tight text-white leading-[1.08] text-4xl sm:text-5xl lg:text-[3.4rem]">
+            SYNTEGRA POS,
+            <br />
+            Kasir Pintar yang Urus Semuanya untuk Anda
           </h1>
-          <p className="mt-6 text-lg text-slate-600 max-w-xl">
-            SYNTEGRA POS membantu Anda mengelola transaksi, stok multi-gudang,
-            membership, hingga integrasi marketplace &amp; akuntansi —
-            satu aplikasi ringan yang tetap jalan walau internet putus.
+
+          <p className="mt-6 text-lg text-white/85 max-w-lg leading-relaxed">
+            Operasional lancar 24/7, tanpa drama, tanpa downtime. Fokus pada
+            pelanggan, biarkan SYNTEGRA POS mengurus transaksi, stok, dan
+            laporan.
           </p>
-          <div className="mt-8 flex flex-wrap items-center gap-3">
+
+          <div className="mt-9 flex flex-wrap gap-4">
             <a
-              href="#cta"
-              className="inline-flex items-center rounded-lg bg-brand-600 hover:bg-brand-700 text-white font-medium px-5 py-3 shadow-glow"
+              href="#harga"
+              className="inline-flex items-center gap-2 rounded-xl bg-white text-brand-700 font-semibold px-6 py-3 shadow-[0_10px_24px_-10px_rgba(0,0,0,0.35)] hover:-translate-y-0.5 transition"
             >
               Coba Gratis 30 Hari
             </a>
             <a
               href="#cara-kerja"
-              className="inline-flex items-center rounded-lg border border-slate-200 hover:border-brand-300 text-slate-700 hover:text-brand-700 font-medium px-5 py-3"
+              className="inline-flex items-center gap-2 rounded-xl border border-white/55 bg-transparent text-white font-semibold px-6 py-3 hover:bg-white/10 transition"
             >
-              Lihat Cara Kerja →
+              <span className="grid place-items-center w-6 h-6 rounded-full border border-current text-[10px]">
+                ▶
+              </span>
+              Lihat Demo
             </a>
           </div>
-          <dl className="mt-10 grid grid-cols-3 gap-6 max-w-md">
+
+          <div className="mt-12 flex flex-wrap gap-x-9 gap-y-6">
             {[
-              ["30 hari", "Trial gratis"],
-              ["99.9%", "Uptime"],
-              ["24/7", "Sync offline"],
-            ].map(([k, v]) => (
-              <div key={v}>
-                <dt className="font-display text-2xl font-bold text-brand-700">{k}</dt>
-                <dd className="text-xs text-slate-500 mt-1">{v}</dd>
+              ["🏬", "Multi-Cabang"],
+              ["📶", "Offline Ready"],
+              ["🛍️", "Integrasi Marketplace"],
+              ["📊", "Laporan Real-time"],
+            ].map(([ic, label]) => (
+              <div
+                key={label}
+                className="flex flex-col items-center gap-2 text-sm font-medium text-white/90 text-center"
+              >
+                <span className="grid place-items-center w-12 h-12 rounded-full border border-white/30 bg-white/10 text-xl">
+                  {ic}
+                </span>
+                {label}
               </div>
             ))}
-          </dl>
-        </div>
-
-        <div className="lg:col-span-5">
-          <HeroPreview />
+          </div>
         </div>
       </div>
     </section>
   );
 }
 
-function HeroPreview() {
-  return (
-    <div className="relative">
-      <div className="absolute -inset-10 bg-gradient-to-br from-brand-500/20 via-accent-400/10 to-transparent blur-3xl rounded-full pointer-events-none" />
-      {/* eslint-disable-next-line @next/next/no-img-element */}
-      <img
-        src="/pos-showcase.png"
-        alt="Tampilan SYNTEGRA POS pada layar kasir"
-        className="relative w-full h-auto drop-shadow-2xl"
-      />
-    </div>
-  );
-}
