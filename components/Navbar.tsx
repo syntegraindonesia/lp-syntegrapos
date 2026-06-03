@@ -31,13 +31,13 @@ export default function Navbar() {
           : "bg-transparent border-b border-transparent"
       }`}
     >
-      <div className="mx-auto max-w-6xl px-6 h-[74px] flex items-center justify-between">
-        <a href="#" className="flex items-center">
+      <div className="mx-auto max-w-6xl px-4 sm:px-6 h-[60px] sm:h-[74px] flex items-center justify-between gap-2">
+        <a href="#" className="flex items-center shrink-0">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src="/logo-syntegra-pos.png"
             alt="Syntegra POS"
-            className={`h-9 w-auto transition ${
+            className={`h-7 sm:h-9 w-auto transition ${
               scrolled ? "dark:brightness-0 dark:invert" : "brightness-0 invert"
             }`}
           />
@@ -72,13 +72,14 @@ export default function Navbar() {
           </a>
           <a
             href="#harga"
-            className={`inline-flex items-center rounded-lg sm:rounded-xl text-[11px] sm:text-sm font-semibold px-2.5 sm:px-5 py-1.5 sm:py-2.5 transition ${
+            className={`inline-flex items-center whitespace-nowrap rounded-lg sm:rounded-xl text-[11px] sm:text-sm font-semibold px-2.5 sm:px-5 py-1.5 sm:py-2.5 transition ${
               scrolled
                 ? "bg-brand-grad text-white shadow-[0_8px_20px_-8px_rgba(37,99,235,0.5)]"
                 : "hero-cta-white bg-white text-brand-700 shadow-[0_10px_24px_-10px_rgba(0,0,0,0.35)] hover:-translate-y-0.5"
             }`}
           >
-            {t("nav_cta")}
+            <span className="sm:hidden">{t("nav_cta_short")}</span>
+            <span className="hidden sm:inline">{t("nav_cta")}</span>
           </a>
         </div>
       </div>

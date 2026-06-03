@@ -14,6 +14,7 @@ export const messages = {
     nav_faq: "FAQ",
     nav_login: "Login",
     nav_cta: "Coba Gratis 30 Hari",
+    nav_cta_short: "Trial 30 Hari",
 
     // Hero
     hero_badge: "Sistem Kasir Modern untuk Bisnis Modern",
@@ -105,6 +106,7 @@ export const messages = {
     nav_faq: "FAQ",
     nav_login: "Login",
     nav_cta: "Start 30-Day Free Trial",
+    nav_cta_short: "30-Day Trial",
 
     hero_badge: "Modern POS for Modern Businesses",
     hero_h1_brand: "Syntegra POS",
