@@ -12,7 +12,7 @@ export default function Footer() {
           <img
             src="/logo-syntegra-pos.png"
             alt="Syntegra POS"
-            className="h-6 sm:h-[30px] w-auto block dark:brightness-0 dark:invert"
+            className="h-5 md:h-[30px] w-auto block dark:brightness-0 dark:invert"
           />
           <span className="text-slate-400 dark:text-slate-500 font-normal">
             {t("footer_tag")}
