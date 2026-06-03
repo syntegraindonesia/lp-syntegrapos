@@ -203,6 +203,6 @@ export function useApp() {
 export function useT() {
   const { lang } = useApp();
   return function t<K extends MessageKey>(key: K): (typeof messages)["id"][K] {
-    return messages[lang][key];
+    return messages[lang][key] as (typeof messages)["id"][K];
   };
 }
